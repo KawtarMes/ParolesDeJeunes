@@ -1,0 +1,169 @@
+/**je definie les variables de theme*/
+:root {
+    --bleue: #50BCBD; /* Couleur principale du thème */
+    --jaune: #F4D35E; /* Couleur secondaire du thème */
+    --rouge: #FF6F61; /* Couleur tertiaire du thème */
+
+  }
+/******************************Police pour les textes ************************************/
+  @font-face {
+    font-family: 'Poppins';
+    src: url('assets/font/Poppins-Regular.ttf') format('truetype');
+}
+
+
+*{
+    margin-top: 3px;
+    font-family: 'Poppins';
+}
+/********************************Navbar mobile et tablette*******************************/
+@media screen and (max-width: 991px){
+        .burger{
+            color: white;
+            background-color: var(--bleue);
+            margin: 0;
+            height: 25px;
+            font-weight: bold;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        /* Cacher navMobile par défaut */
+            .navMobile {
+                display: none;
+        }
+
+        /* Montrer navMobile lorsque la classe show est présente */
+        .navMobile.show, a {
+            display: flex;
+            display:flex;
+            background-color: var(--bleue);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            flex-direction: column;
+            align-items: flex-end;
+        
+        }
+        #navDesktop{
+            display: none;
+        }
+  
+
+}
+/************************************Desktop************************************************/
+@media screen and (min-width: 991px){
+/* Navbar desktop */
+#burger{
+    display: none;
+}
+.navMobile{
+    display: none;
+}
+.links {
+	background-color:var(--bleue);
+	box-shadow: 0 0 32px #0003;
+	font-size: 2em;
+}
+.links > a {
+	color: white;
+	padding: .75em;
+	text-align: center;
+	text-decoration: none;
+	transition: all .5s;
+}
+.links > a:hover { /* on hover, la police est en bold*/
+	font-weight: bold;
+}
+.links > .line {/*ligne en dessous des text on hover*/
+	background: var(--jaune);
+	height: 5px;
+	pointer-events: none;
+}
+
+/* Les interactions de la nav bar */
+#header {
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.links {
+	display: grid;
+	grid-template-columns: repeat(var(--items), 1fr);
+	position: relative;
+}
+.links > .line {
+	opacity: 0;
+	transition: all .5s;
+	position: absolute;
+	bottom: 0;
+	left: var(--left, calc(100% / var(--items) * (var(--index) - 1)));
+	width: var(--width, calc(100% / var(--items)));
+	--index: 0;
+}
+.links > a:hover ~ .line {
+	opacity: 1;
+}
+
+.links > a:nth-of-type(1):hover ~ .line { --index: 1; }
+.links > a:nth-of-type(2):hover ~ .line { --index: 2; }
+.links > a:nth-of-type(3):hover ~ .line { --index: 3; }
+.links > a:nth-of-type(4):hover ~ .line { --index: 4; }
+.links > a:nth-of-type(5):hover ~ .line { --index: 5; }
+.links > a:nth-of-type(6):hover ~ .line { --index: 6; }
+.links > a:nth-of-type(7):hover ~ .line { --index: 7; }
+.links > a:nth-of-type(8):hover ~ .line { --index: 8; }
+.links > a:nth-of-type(9):hover ~ .line { --index: 9; }
+.links > a:nth-of-type(10):hover ~ .line { --index: 10; }
+.links > a:last-of-type:hover ~ .line { --index: var(--items); }
+
+/***********************************************************************************/
+/***********Page medias cards************/
+.content{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+  
+}
+#card1{
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--jaune);
+    border-radius: 20px;
+    margin: 10px;
+}
+#card2{
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bleue);
+    border-radius: 20px;
+    margin: 10px;
+}
+#card3{
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--rouge);
+    border-radius: 20px;
+    margin: 10px;
+}
+#card4{
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: 10px;
+}
+
+
+
+}
