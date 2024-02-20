@@ -16,6 +16,10 @@
     margin-top: 3px;
     font-family: 'Poppins';
 }
+h2,h3{
+    color: var(--rouge);
+    font-weight: bold;
+}
 /********************************Navbar mobile et tablette*******************************/
 @media screen and (max-width: 991px){
         .burger{
@@ -47,6 +51,48 @@
         }
         #navDesktop{
             display: none;
+        }
+
+        footer{
+            color: white;
+            display: flex;
+            background-color: var(--bleue);
+        }
+        .footerContainer {
+            margin: 3px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr; 
+          
+        }
+        .MentionIcones{
+            display: grid;
+            justify-content: flex-end;
+        }
+        .fondLogo{
+            background-color: white;
+            width: 170px;
+        }
+        #Logoligue{
+            width: 170px;
+        }
+        .socialNetwork{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        
+        }
+        .icone1, .icone2, .icone3, .icone4, .icone5{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        .icone1, .icone3, .icone5{
+            background-color: var(--jaune);
+        }
+        .icone2, .icone4{
+            background-color: var(--rouge);
         }
   
 
@@ -119,12 +165,17 @@
 .links > a:last-of-type:hover ~ .line { --index: var(--items); }
 
 /***********************************************************************************/
+/***********Page medias main************/
+main {
+    display:grid;
+}
 /***********Page medias cards************/
 .content{
+    padding: 15%;
     display: grid;
-    justify-content: center;
+    justify-items: center;
     grid-template-columns: 1fr 1fr;
-    justify-content: space-evenly;
+    grid-column-gap: 50px;
   
 }
 #card1{
@@ -163,7 +214,50 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     margin: 10px;
 }
+/***************formulaire Section participez***/
+form{
+    display: grid;
+    justify-content: center;
+}
+/************footer*************/
+footer{
+    color: white;
+    display: flex;
+    background-color: var(--bleue);
+}
+.footerContainer {
+    margin: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-column-gap: 20px;
+}
+.MentionIcones{
+    display: grid;
+    justify-content: flex-end;
+}
+.fondLogo{
+    background-color: white;
+    width: 250px;
+}
+.socialNetwork{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+}
+.icone1, .icone2, .icone3, .icone4, .icone5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+.icone1, .icone3, .icone5{
+    background-color: var(--jaune);
+}
+.icone2, .icone4{
+    background-color: var(--rouge);
+}
 
 
 }
