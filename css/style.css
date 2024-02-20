@@ -217,7 +217,7 @@ main {
 /***************formulaire Section participez***/
 form{
     display: grid;
-    justify-content: center;
+    justify-content: start;
 }
 /************footer*************/
 footer{
