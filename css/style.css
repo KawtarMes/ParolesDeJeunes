@@ -10,7 +10,10 @@
     font-family: 'Poppins';
     src: url('assets/font/Poppins-Regular.ttf') format('truetype');
 }
-
+h1{
+    font-weight: bold;
+    color: var(--bleue);
+}
 
 *{
     margin-top: 3px;
@@ -26,11 +29,12 @@ h2,h3{
             color: white;
             background-color: var(--bleue);
             margin: 0;
-            height: 25px;
+            height: 2em;
             font-weight: bold;
             display: flex;
             justify-content: flex-end;
             align-items: center;
+            font-size: 2em;
         }
         /* Cacher navMobile par défaut */
             .navMobile {
@@ -47,12 +51,39 @@ h2,h3{
             text-decoration: none;
             flex-direction: column;
             align-items: flex-end;
+            
         
         }
         #navDesktop{
             display: none;
         }
-
+        /*Page d'accueil image de couverture version mobile tablette**/
+        .imageCover{
+            display: flex;
+            justify-content: center;
+        }
+        /***Page d'accueil section actualités**/
+        .carrousselActu{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .cardActu{
+            padding: 3px;
+            margin: 10px;
+            width: 200px;
+            background-color: var(--jaune);
+        }
+        /***Formulaire de la section participez***/
+        form{
+            display: grid;
+            justify-content: start;
+        }
+        #ChampIdentifiant , #ChampMotdepasse{
+            padding: 3px;
+            border: none;
+            border-bottom: var(--bleue);
+            box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+        }
         footer{
             color: white;
             display: flex;
@@ -165,10 +196,92 @@ h2,h3{
 .links > a:last-of-type:hover ~ .line { --index: var(--items); }
 
 /***********************************************************************************/
-/***********Page medias main************/
+/**Page d'accueil Image de couverture*****/
+.imageCover{
+    display: grid;
+    justify-content: center;
+    padding: 70px;
+}
+/*Page accueil section actualités*/
+.carrousselActu
+{  display: flex;
+    justify-content: center;
+    gap: 40px;
+    overflow:scroll;
+}
+.cardActu{
+    padding: 3px;
+    margin: 10px;
+    width: 200px;
+    display: grid;
+    justify-content: center;
+    background-color: var(--jaune);
+}
+
+/*********** main************/
 main {
     display:grid;
 }
+/*************** Section participez***/
+.participez {
+    display:grid;
+    grid-template-columns: 3fr 1fr; 
+}
+/*Formulaire*/
+form{
+    display: grid;
+    justify-content: start;
+    padding: 4px;
+}
+#ChampIdentifiant , #ChampMotdepasse{
+    padding: 3px;
+    border: none;
+    border-bottom: var(--bleue);
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+}
+
+/************footer*************/
+footer{
+    color: white;
+    display: flex;
+    background-color: var(--bleue);  
+}
+.footerContainer {
+    margin: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-column-gap: 20px;
+}
+.MentionIcones{
+    display: grid;
+    justify-content: flex-end;
+}
+.fondLogo{
+    background-color: white;
+    width: 250px;
+}
+.socialNetwork{
+    display: flex;
+    gap: 7px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.icone1, .icone2, .icone3, .icone4, .icone5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+.icone1, .icone3, .icone5{
+    background-color: var(--jaune);
+}
+.icone2, .icone4{
+    background-color: var(--rouge);
+}
+
+/*****************************************************************************/
 /***********Page medias cards************/
 .content{
     padding: 15%;
@@ -214,50 +327,44 @@ main {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     margin: 10px;
 }
-/***************formulaire Section participez***/
-form{
-    display: grid;
-    justify-content: start;
-}
-/************footer*************/
-footer{
-    color: white;
-    display: flex;
-    background-color: var(--bleue);
-}
-.footerContainer {
-    margin: 8px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-column-gap: 20px;
-}
-.MentionIcones{
-    display: grid;
-    justify-content: flex-end;
-}
-.fondLogo{
-    background-color: white;
-    width: 250px;
-}
-.socialNetwork{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-}
-.icone1, .icone2, .icone3, .icone4, .icone5{
+
+
+
+
+
+
+
+/**************************************************************************/
+/********Page Podcast Desktop******************/
+.podcast{
+    padding: 10px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    border-radius: 10px;
+    gap: 25px;
 }
-.icone1, .icone3, .icone5{
+.podcast > article{
+    width: 70vw;
+}
+img{
+    padding: 5px;
+}
+
+
+
+/**************************************************************************************/
+/***********Page Collectifs**********************/
+.Collectifs{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.cardCollectif{
+    padding: 7px;
+    margin: 10px;
+    width: 200px;
+    display: grid;
+    justify-content: center;
     background-color: var(--jaune);
 }
-.icone2, .icone4{
-    background-color: var(--rouge);
-}
-
-
 }
