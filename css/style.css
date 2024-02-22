@@ -68,10 +68,19 @@ h2,h3{
             grid-template-columns: 1fr 1fr;
         }
         .cardActu{
-            padding: 3px;
-            margin: 10px;
-            width: 200px;
-            background-color: var(--jaune);
+            justify-items: center;
+        display: grid;
+        max-width: 300px;
+        overflow: hidden;
+        margin: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        background-color: var(--jaune);
+        }
+        .cardActu img{
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1/1;
         }
         /***Formulaire de la section participez***/
         form{
@@ -207,20 +216,33 @@ h2,h3{
 {  display: flex;
     justify-content: center;
     gap: 40px;
-    overflow:scroll;
+    /* overflow:scroll; */
 }
-.cardActu{
-    padding: 3px;
-    margin: 10px;
-    width: 200px;
+.cardActu {
+    justify-items: center;
     display: grid;
-    justify-content: center;
+    max-width: 300px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
     background-color: var(--jaune);
+    transition: transform 0.3s ease; /* Add a transition for smoother animation */
 }
 
+.cardActu img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+}
+
+.cardActu:hover {
+    transform: scale(1.05); /* Apply a scale transformation on hover */
+}
 /*********** main************/
 main {
     display:grid;
+    margin: 30px;px ;
 }
 /*************** Section participez***/
 .participez {
@@ -360,11 +382,28 @@ img{
     gap: 20px;
 }
 .cardCollectif{
-    padding: 7px;
-    margin: 10px;
-    width: 200px;
+    justify-items: center;
     display: grid;
-    justify-content: center;
-    background-color: var(--jaune);
+    max-width: 300px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background-color: var(--rouge);
+    transition: transform 0.3s ease; /* Add a transition for smoother animation */
+
 }
+.cardCollectif img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+}
+
+.cardCollectif:hover {
+    transform: scale(1.05);
+
+.cardCollectif h6{
+    font-size: larger;
+}
+
 }
