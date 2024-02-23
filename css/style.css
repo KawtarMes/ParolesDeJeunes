@@ -242,7 +242,7 @@ h2,h3{
 /*********** main************/
 main {
     display:grid;
-    margin: 30px;px ;
+    margin: 30px;
 }
 /*************** Section participez***/
 .participez {
@@ -321,6 +321,8 @@ footer{
     background-color: var(--jaune);
     border-radius: 20px;
     margin: 10px;
+    transition: transform 0.3s ease; /* Add a transition for smoother animation */
+
 }
 #card2{
     width: 320px;
@@ -330,6 +332,8 @@ footer{
     background-color: var(--bleue);
     border-radius: 20px;
     margin: 10px;
+    transition: transform 0.3s ease; /* Add a transition for smoother animation */
+
 }
 #card3{
     width: 320px;
@@ -339,6 +343,8 @@ footer{
     background-color: var(--rouge);
     border-radius: 20px;
     margin: 10px;
+    transition: transform 0.3s ease; /* Add a transition for smoother animation */
+
 }
 #card4{
     width: 320px;
@@ -348,8 +354,13 @@ footer{
     border-radius: 20px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     margin: 10px;
+    transition: transform 0.3s ease; /* Add a transition for smoother animation */
+
 }
 
+.card :hover{
+    transform: scale(1.05);
+}
 
 
 
@@ -405,5 +416,35 @@ img{
 .cardCollectif h6{
     font-size: larger;
 }
+}
+/**********************************************************/
+/*******Page Galerie Photo*****************/
+.GaleriePhotos{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+}
+
+
+.cardPhoto{
+    justify-items: center;
+    display: grid;
+    max-width: 300px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background-color: var(--rouge);
+    transition: transform 0.3s ease;
+
+}
+
+.cardPhoto img{
+    width: 95%;
+}
+
+.cardPhoto:hover{
+    transform: scale(1.05);
+}
+
 
 }
