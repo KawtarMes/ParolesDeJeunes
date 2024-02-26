@@ -1,0 +1,139 @@
+/********************************Navbar mobile et tablette*******************************/
+@media screen and (max-width: 991px){
+    .burger{
+        color: white;
+        background-color: var(--bleue);
+        margin: 0;
+        height: 2em;
+        font-weight: bold;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 2em;
+    }
+    /* Cacher navMobile par défaut */
+        .navMobile {
+            display: none;
+    }
+
+    /* Montrer navMobile lorsque la classe show est présente */
+    .navMobile.show, a {
+        display: flex;
+        display:flex;
+        background-color: var(--bleue);
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        flex-direction: column;
+        align-items: flex-end;
+        
+    
+    }
+    #navDesktop{
+        display: none;
+    }
+    /*Page d'accueil image de couverture version mobile tablette**/
+    .imageCover{
+        display: flex;
+        justify-content: center;
+    }
+    /***Page d'accueil section actualités**/
+    .carrousselActu{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .cardActu{
+        justify-items: center;
+    display: grid;
+    max-width: 300px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background-color: var(--jaune);
+    }
+    .cardActu img{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+    /***Formulaire de la section participez***/
+    .participez{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    
+    form{
+        display: grid;
+        justify-content: start;
+    }
+    #ChampIdentifiant , #ChampMotdepasse{
+        padding: 3px;
+        border: none;
+        border-bottom: var(--bleue);
+        box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+    }
+
+
+    /***************Footer****************/
+    footer{
+        color: white;
+        display: flex;
+        background-color: var(--bleue);
+    }
+    .footerContainer {
+        margin: 3px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+      
+    }
+    .MentionIcones{
+        display: grid;
+        justify-content: flex-end;
+    }
+    .fondLogo{
+        background-color: white;
+        width: 170px;
+    }
+    #Logoligue{
+        width: 170px;
+    }
+    .socialNetwork{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    .icone1, .icone2, .icone3, .icone4, .icone5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .icone1, .icone3, .icone5{
+        background-color: var(--jaune);
+    }
+    .icone2, .icone4{
+        background-color: var(--rouge);
+    }
+
+/***************************************************************/
+/************Page galerie photos***/
+.GaleriePhotos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+/*********Page Galerie video*************/
+.GalerieVideos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+ 
+}
+
+}
