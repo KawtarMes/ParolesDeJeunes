@@ -14,6 +14,9 @@ h1{
     font-weight: bold;
     color: var(--bleue);
 }
+a{
+    text-decoration: none;
+}
 
 *{
     margin-top: 3px;
@@ -114,13 +117,12 @@ h2,h3{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     background-color: var(--jaune);
-    transition: transform 0.3s ease; /* Add a transition for smoother animation */
+    transition: transform 0.3s ease;
+
 }
 
 .cardActu img {
-    width: 100%;
-    height: 70%;
-    aspect-ratio: 1/1;
+    width: 95%;
 }
 
 .cardActu:hover {
@@ -256,6 +258,12 @@ footer{
 
 
 /**************************************************************************/
+/**Page Detail Podcasts*/
+.podcastsContainer{
+    padding-left:25px ;
+    padding-right: 5px ;
+
+}
 /********Page Podcast Desktop******************/
 .podcast{
     padding: 10px;
@@ -288,13 +296,10 @@ img{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     background-color: var(--rouge);
-    transition: transform 0.3s ease; /* Add a transition for smoother animation */
-
+    transition: transform 0.3s ease;
 }
 .cardCollectif img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1/1;
+    width: 95%;
 }
 
 .cardCollectif:hover {
@@ -375,5 +380,33 @@ img{
 
 .cardVideo:hover{
     transform: scale(1.05);
+}
+.cardVideo p{
+    color: black;
+}
+
+/*******************************************************/
+/*************Page detail video **********************/
+video{
+    width: 70%;
+    height:80%;
+}
+.videoContainer{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: center;
+}
+.cardPhoto p, h4{
+    color: black;
+}
+
+/*********************************************************************/
+/****************Page Musique**************************************/
+.MusiqueContainer{
+    padding: 15px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 2fr 1fr;
 }
 /*}*/
