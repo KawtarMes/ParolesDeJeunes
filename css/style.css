@@ -409,4 +409,14 @@ video{
     gap: 40px;
     grid-template-columns: 2fr 1fr;
 }
+
+/***********************************************************************************/
+/************************Page detailevent article evennement*****************************/
+
+
+.articleContainer{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
 /*}*/
