@@ -419,4 +419,25 @@ video{
     justify-content: center;
     align-items: center;
 }
+
+
+/*****************************************************************************************/
+/*********Page musique*********/
+
+.Musique{
+    cursor: pointer;
+}
+.musiqueListe :hover{
+ 
+    background-color: var(--rouge);
+}
+
+.DetailMusique{
+    padding: 1%;
+    display: grid;
+    align-items: center;
+    height: 40%;
+    background-color: #ff6e6176;
+}
+
 /*}*/

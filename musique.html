@@ -10,10 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
     <script src="https://kit.fontawesome.com/da3ac613e4.js" crossorigin="anonymous"></script>
     <script src="js/navbar.js" defer></script>
-
-
-
-    
+    <script src="js/music.js" defer></script>
+ 
 </head>
 <body>
         <!--  /////////////////////////// navbar  //////////////////////// -->
@@ -44,30 +42,36 @@
         <h1>Musique</h1>
         <div class="MusiqueContainer">
             <div class="musiqueListe">
-                <div class="Musique">
+                <div class="Musique" id="musique1">
                     <img src="assets/images/cd.jpg" width="200" alt="coverture">
 
                     <h4>Titre</h4>
                     <p>Date,artiste(s)</p>
                 </div>
                 <hr>
-                <div class="Musique">
-                    <img src="assets/images/cd.jpg" width="200" alt="coverture">
+                <div class="Musique" id="musique2">
+                    <img src="assets/images/musicyellow.jpg" width="200" alt="coverture">
 
                     <h4>Titre</h4>
                     <p>Date,artiste(s)</p>
                 </div>
                 <hr>
-                <div class="Musique">
-                    <img src="assets/images/cd.jpg" width="200" alt="coverture">
+                <div class="Musique" id="musique3">
+                    <img src="assets/images/casettes.jpg" width="200" alt="coverture">
 
                     <h4>Titre</h4>
                     <p>Date,artiste(s)</p>
                 </div>
                 <hr>
-                <div class="Musique">
-                    <img src="assets/images/cd.jpg" width="200" alt="coverture">
+                <div class="Musique" id="musique4">
+                    <img src="assets/images/guitar.jpg" width="200" alt="coverture">
 
+                    <h4>Titre</h4>
+                    <p>Date,artiste(s)</p>
+                </div>
+                <hr>
+                <div class="Musique" id="musique5">
+                    <img src="assets/images/musicyellow.jpg" width="200" alt="coverture">
                     <h4>Titre</h4>
                     <p>Date,artiste(s)</p>
                 </div>
@@ -77,6 +81,13 @@
         
         <div class="DetailMusique">
             <img src="assets/images/cd.jpg" width="500" alt="coverture">
+            <div class="musiquePlaying">
+                <p>Vous etes en écoute</p>
+                <audio controls>
+                    <source id="audioPlaying"   src="" type="audio/mpeg">
+                  
+                </audio>
+            </div>
 
         </div>
     </div>
