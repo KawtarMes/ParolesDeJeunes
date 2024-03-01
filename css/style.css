@@ -402,13 +402,6 @@ video{
 }
 
 /*********************************************************************/
-/****************Page Musique**************************************/
-.MusiqueContainer{
-    padding: 15px;
-    display: grid;
-    gap: 40px;
-    grid-template-columns: 2fr 1fr;
-}
 
 /***********************************************************************************/
 /************************Page detailevent article evennement*****************************/
@@ -423,6 +416,13 @@ video{
 
 /*****************************************************************************************/
 /*********Page musique*********/
+.MusiqueContainer{
+    padding: 15px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 2fr 1fr;
+}
+
 
 .Musique{
     cursor: pointer;
@@ -433,11 +433,18 @@ video{
 }
 
 .DetailMusique{
+    margin: 1%;
     padding: 1%;
     display: grid;
     align-items: center;
     height: 40%;
     background-color: #ff6e6176;
+    border-radius: 15px;
+}
+.DetailMusique img{
+    justify-self: center;
+    width: 470px ;
+    height: 320px; ;
 }
 
 /*}*/
