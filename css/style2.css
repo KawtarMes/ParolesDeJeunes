@@ -17,7 +17,7 @@
     }
 
     /* Montrer navMobile lorsque la classe show est présente */
-    .navMobile.show, a {
+    .navMobile.show{
         display: flex;
         display:flex;
         background-color: var(--bleue);
@@ -26,7 +26,17 @@
         text-decoration: none;
         flex-direction: column;
         align-items: flex-end;
-        
+    
+    }
+    .navMobile.show a{
+        display: flex;
+        display:flex;
+        background-color: var(--bleue);
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        flex-direction: column;
+        align-items: flex-end;
     
     }
     #navDesktop{
@@ -60,67 +70,52 @@
     /***Formulaire de la section participez***/
     .participez{
         display: grid;
-        align-items: center;
-        justify-content: center;
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
     
     
-    
-    form{
-        display: grid;
-        justify-content: start;
-    }
-    #ChampIdentifiant , #ChampMotdepasse{
-        padding: 3px;
-        border: none;
-        border-bottom: var(--bleue);
-        box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
-    }
+    /*Formulaire*/
+  /* #motDePasse{
+        text-decoration: none;
+        background-color: none;
+        color: black;
+    } */
 
 
     /***************Footer****************/
     footer{
         color: white;
-        display: flex;
         background-color: var(--bleue);
     }
     .footerContainer {
-        margin: 3px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr; 
+        margin: 3%;
+        padding: 3%;
+        display:grid;
+        grid-template-columns: 1fr;
+        align-items: start;
       
     }
     .MentionIcones{
         display: grid;
-        justify-content: flex-end;
+        justify-content: start;
     }
     .fondLogo{
         background-color: white;
-        width: 170px;
+        width: 155px;
     }
     #Logoligue{
-        width: 170px;
-    }
-    .socialNetwork{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    
+        width: 150px;
     }
     .icone1, .icone2, .icone3, .icone4, .icone5{
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        padding: 5px;
+        padding: 3px;
         border-radius: 10px;
+        font-size: smaller;
     }
-    .icone1, .icone3, .icone5{
-        background-color: var(--jaune);
-    }
-    .icone2, .icone4{
-        background-color: var(--rouge);
-    }
-
 /***************************************************************/
 /************Page galerie photos***/
 .GaleriePhotos{
@@ -135,5 +130,14 @@
     grid-template-columns: repeat(2, 1fr);
  
 }
+/**************************************************************************************/
+/***********Page Collectifs**********************/
+.Collectifs{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
 
 }

@@ -9,8 +9,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style2.css">
-    <script src="https://kit.fontawesome.com/da3ac613e4.js" crossorigin="anonymous"></script>
-    <script src="js/navbar.js" defer></script>
+    <script defer src="https://kit.fontawesome.com/da3ac613e4.js" crossorigin="anonymous"></script>
+    <script defer src="js/navbar.js" defer></script>
+    <script defer type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "name": "Parole de Jeunes",
+          "url": "https://kawtarmes.github.io/ParolesDeJeunes/",
+          "logo": "",
+          "description": "Site de l'association Parole de Jeunes, retrouvez nos ateliers et actualités.",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "193 rue Horace Bertin",
+            "addressLocality": "Marseille",
+            "postalCode": "13005",
+            "addressCountry": "FR"
+          },
+          "email": "educationnumerique@laligue13.fr",
+          "telephone": "04 91 24 31 61",
+          "sameAs": [
+            "http://www.facebook.com/laligue13/",
+            "http://www.linkedin.com/company/liguedelenseignement13",
+            "http://www.instagram.com/la_ligue_13/",
+            "http://www.twitter.com/laligue13",
+            "http://www.youtube.com/channel/UCRuRTqpu_ECEbto6Gx6nMkQ"
+          ]
+        }
+        </script>
+        
 
 
 
@@ -49,36 +76,46 @@
         <div class="actualités">
             <h2>Actualités</h2>
             <div class="carrousselActu">
-                <div class="cardActu">
-                    <img width="200" src="assets/images/podcastimage.jpg" alt="image couverture de l'article">
-                    <h4>Titre de l'article/actu</h4>
-                    <p>jj/mm/aaaa</p>
-                    <p>Description </p>
-                </div>
-                <div class="cardActu">
-                    <img width="200" src="assets/images/city.jpg" alt="image couverture de l'article">
-                    <h4>Titre de l'article/actu</h4>
-                    <p>jj/mm/aaaa</p>
-                    <p>Description </p>
-                </div>
-                <div class="cardActu">
-                    <img width="200" src="assets/images/podcastimage.jpg" alt="image couverture de l'article">
-                    <h4>Titre de l'article/actu</h4>
-                    <p>jj/mm/aaaa</p>
-                    <p>Description </p>
-                </div>
-                <div class="cardActu">
-                    <img width="200" src="assets/images/city.jpg" alt="image couverture de l'article">
-                    <h4>Titre de l'article/actu</h4>
-                    <p>jj/mm/aaaa</p>
-                    <p>Description </p>
-                </div>
-                <div class="cardActu">
-                    <img width="200" src="assets/images/podcastimage.jpg" alt="image couverture de l'article">
-                    <h4>Titre de l'article/actu</h4>
-                    <p>jj/mm/aaaa</p>
-                    <p>Description </p>
-                </div>
+                <a href="DetailEvent.html">
+                    <div class="cardActu">
+                        <img width="200" src="assets/images/pexels-valentin-antonucci-1275393.jpg" alt="image couverture de l'article">
+                        <h4>Titre de l'article/actu</h4>
+                        <p>jj/mm/aaaa</p>
+                        <p>Description </p>
+                    </div>
+                </a>
+                <a href="Podcast.html">
+                    <div class="cardActu">
+                        <img width="200" src="assets/images/podcastimage.jpg" alt="image couverture de l'article">
+                        <h4>Titre de l'article/actu</h4>
+                        <p>jj/mm/aaaa</p>
+                        <p>Description </p>
+                    </div>
+                </a>
+                <a href="musique.html">
+                    <div class="cardActu">
+                        <img width="200" src="assets/images/musicyellow.jpg" alt="image couverture de l'article">
+                        <h4>Titre de l'article/actu</h4>
+                        <p>jj/mm/aaaa</p>
+                        <p>Description </p>
+                    </div>
+                </a>
+                <a href="DetailVideo.html">
+                    <div class="cardActu">
+                        <img width="200" src="assets/images/laMajor.jpg" alt="image couverture de l'article">
+                        <h4>Titre de l'article/actu</h4>
+                        <p>jj/mm/aaaa</p>
+                        <p>Description </p>
+                    </div>
+                </a>
+                <a href="DetailPhoto.html">
+                    <div class="cardActu">
+                        <img width="200" src="assets/images/city.jpg" alt="image couverture de l'article">
+                        <h4>Titre de l'article/actu</h4>
+                        <p>jj/mm/aaaa</p>
+                        <p>Description </p>
+                    </div>
+                </a>
     
         </div>
     </div>
@@ -110,13 +147,13 @@
         <div class="participez">
             <p>Pour participer il est nécessaire de s'identifier sur le site avec un compte valide. Si vous ne disposez pas encore de compte, vous pouvez en demander la création à mediationnumerique2@laligue13.fr</p>
             <!-- formulaire -->
-            <form action="">
-                <input type="text" name="identifiant" id="ChampIdentifiant" placeholder="Identifiant">
-                <input type="password" name="password" id="ChampMotdepasse" placeholder="Password">
-                <input type="checkbox" id="seSouvenirDeMoi" name="seSouvenirDeMoi">
-                <label for="seSouvenirDeMoi">Se souvenir de moi</label>
-           
+            <form class="login-form">
+                <input type="text" placeholder="Identifiant"/>
+                <input type="password" placeholder="Mot de passe"/>
+                <button>Connexion</button>
+                <a  id="motDePasse" href="#">Mot de passe oublié?</a>
             </form>
+              
         </div>
        
     </main>

@@ -124,6 +124,10 @@ h2,h3{
 .cardActu img {
     width: 95%;
 }
+.cardActu {
+    text-decoration: none;
+    color: black;
+}
 
 .cardActu:hover {
     transform: scale(1.05); /*effet on hover*/
@@ -131,25 +135,53 @@ h2,h3{
 /*********** main************/
 main {
     display:grid;
+    align-self: center;
     margin: 30px;
 }
 /*************** Section participez***/
 .participez {
     display:grid;
-    grid-template-columns: 3fr 1fr; 
+    grid-template-columns: repeat(2, 1fr);
 }
 /*Formulaire*/
-form{
-    display: grid;
-    justify-content: start;
-    padding: 4px;
-}
-#ChampIdentifiant , #ChampMotdepasse{
-    padding: 3px;
-    border: none;
-    border-bottom: var(--bleue);
-    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
-}
+
+.login-form {
+    position: relative;
+    z-index: -1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  .login-form input {
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  .login-form button {
+    outline: 0;
+    background: var(--jaune);
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color:black;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+  .login-form button:hover,.login-form button:active,.login-form button:focus {
+    background: var(--rouge);
+    color: white;
+  }
+  
 
 /************footer*************/
 footer{
@@ -169,7 +201,7 @@ footer{
 }
 .fondLogo{
     background-color: white;
-    width: 250px;
+    width: 257px;
 }
 .socialNetwork{
     display: flex;
@@ -287,6 +319,7 @@ img{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
 }
+
 .cardCollectif{
     justify-items: center;
     display: grid;
@@ -295,6 +328,9 @@ img{
     margin: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    text-decoration: none;
+    color: black;
+    z-index: -1;
     background-color: var(--rouge);
     transition: transform 0.3s ease;
 }
@@ -308,6 +344,26 @@ img{
 .cardCollectif h6{
     font-size: larger;
 }
+}
+
+/******************************************************************************************/
+/*************Page detail collectif***********************************/
+
+.detailsCollectif {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.detailsCollectif img {
+    max-width: 95%; 
+    height: auto; 
+}
+
+.detailsCollectif article {
+    margin-top: 20px; /* Add space between image and article */
 }
 /**********************************************************/
 /*******Page Galerie Photo*****************/
