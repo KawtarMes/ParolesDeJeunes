@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /perso/
+
+User-agent: Googlebot
+Allow: /
+
+sitemap:"https://kawtarmes.github.io/ParolesDeJeunes/sitemap.xml"
