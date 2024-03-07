@@ -1,8 +1,10 @@
-/********************************Navbar tablette*******************************/
-@media only screen and (min-width: 768px) and (max-width: 1024px){
+/***mobile first**/
+
+@media only screen and (max-width: 767px){ 
     #burger{
         display: grid;
     }
+
     .burger{
         color: white;
         background-color: var(--bleue);
@@ -12,7 +14,7 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        font-size: 1.5em;
+        font-size: 2em;
     }
     /* Cacher navMobile par défaut , on la montre que si on click sur le burger*/
         .navMobile {
@@ -45,39 +47,26 @@
     #navDesktop{
         display: none;
     }
-
-    /******************************************************************************************************************************************/
-    /*Page d'accueil image de couverture version mobile tablette**/
-    .imageCover{
-        display: flex;
-        justify-content: center;
-    }
+ /***************************************************************************************************/
+  /*Page d'accueil image de couverture version mobile tablette**/
+  .imageCover{
+    display: flex;
+    justify-content: center;
+}
     /***Page d'accueil section actualités**/
+    /**Afficher 1 card */
     .carrousselActu{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    .cardActu{
         justify-items: center;
-        display: grid;
-        max-width: 300px;
-        overflow: hidden;
-        margin: 20px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        cursor: pointer;
-        background-color: var(--jaune);
-    }
-    
-    .cardActu img{
-        width: 95%;
-       
-    }
+        grid-template-columns: 1fr;
+    } 
     /***Formulaire de la section participez***/
-    .participez{
+     .participez{
         display: grid;
         grid-template-columns: 1fr;
         gap: 15px;
     }
+
     /***************Footer****************/
     footer{
         color: white;
@@ -111,28 +100,35 @@
         border-radius: 10px;
         font-size: smaller;
     }
-/***************************************************************/
-/************Page galerie photos***/
-.GaleriePhotos{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    
 
-}
 
-/*********Page Galerie video*************/
-.GalerieVideos{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
  
-}
-/**************************************************************************************/
-/***********Page Collectifs**********************/
-.Collectifs{
-    padding: 5px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-}
 
-
-}
