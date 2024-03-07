@@ -100,13 +100,93 @@
         border-radius: 10px;
         font-size: smaller;
     }
-    
 
+    /*************************************************************************************************************/
+    /******************Page Médias***********************************/
+    .content{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr;
+    }
+   /**************************************************************************/
+/**Page podcasts*/
+.podcastsContainer{
+    margin-top: 30px;
+}
+.podcastsContainer img{
+    width: 250px;
+    padding: 3px;
+}
+.podcast {
+    display: grid;
+    align-items: start;
+}
+/**************************************************************************************/
+/***********Page Collectifs**********************/
+.Collectifs{
+  padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 15px;
+}
+/**********************************************************/
+/*******Page Galerie Photo*****************/
+.GaleriePhotos{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+}
 
+/*************************************************************************************/
+/******************Page DetailPhoto*******************/
 
+.carrouselContainer img{
+    width: 80%;
+}
 
+    /***************************************************************/
+/*********Page Galerie video*************/
+.GalerieVideos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+ 
+}
 
+    /***************************************************************/
+/*********Page Galerie video*************/
+.GalerieVideos{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
 
+}
+
+/*******************************************************/
+/*************Page detail video **********************/
+video{
+    width: 65%;
+    height:70%;
+}
+/*****************************************************************************************/
+/*********Page musique*********/
+.MusiqueContainer{
+    padding: 15px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column-reverse;
+} /****Detail musique en premier**/
+
+.DetailMusique img{
+    justify-self: center;
+    width: 85%;
+    height: auto; 
+}
+.DetailMusique{
+    height: 25%;
+    display: grid;
+    justify-items: center;
+}
 
 
 

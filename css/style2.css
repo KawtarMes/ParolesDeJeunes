@@ -112,6 +112,28 @@
         font-size: smaller;
     }
 /***************************************************************/
+ /******************Page Médias***********************************/
+ .content{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+}
+/**Page podcasts*/
+.podcastsContainer{
+    margin-top: 30px;
+}
+.podcastsContainer img{
+    width: 200px;
+height: 180px;
+}
+/**************************************************************************************/
+/***********Page Collectifs**********************/
+.Collectifs{
+  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    gap: 15px;
+}
 /************Page galerie photos***/
 .GaleriePhotos{
     display: grid;
@@ -126,13 +148,29 @@
  
 }
 /**************************************************************************************/
-/***********Page Collectifs**********************/
-.Collectifs{
-    padding: 5px;
+/*****************************************************************************************/
+/*********Page musique*********/
+.MusiqueContainer{
+    padding: 15px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    gap: 40px;
+    grid-template-columns: 2fr 1.5fr;
+}
+.DetailMusique{
+    margin: 1%;
+    padding: 1%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 30%;
+    background-color: #ff6e6176;
+    border-radius: 15px;
 }
 
+.DetailMusique img{
+    justify-self: center;
+    width: 85%;
+    height: auto; 
+}
 
 }

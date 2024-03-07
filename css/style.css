@@ -283,10 +283,6 @@ footer{
 
 
 
-
-
-
-
 /**************************************************************************/
 /**Page Detail Podcasts*/
 .podcastsContainer{
@@ -300,11 +296,15 @@ footer{
     display: flex;
     gap: 25px;
 }
+.podcastsContainer a {
+    text-decoration: none;
+    color: black;
+}
 .podcast > article{
     width: 70vw;
 }
-img{
-    padding: 5px;
+.podcast img{
+    padding: 3px;
 }
 
 
@@ -370,7 +370,6 @@ img{
     grid-template-columns: repeat(4 ,1fr);
 }
 
-
 .cardPhoto{
     justify-items: center;
     display: grid;
@@ -395,6 +394,7 @@ img{
 /******************Page DetailPhoto*******************/
 
 .carrouselContainer{
+    padding: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -403,9 +403,6 @@ img{
     color: gray;
     font-size: xx-large;
     cursor: pointer;
-
-
-
 
 }
 
@@ -466,6 +463,13 @@ video{
     justify-content: center;
     align-items: center;
 }
+.articleContainer img{
+    justify-self: center;
+    width: 80%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
 
 
 /*****************************************************************************************/
@@ -497,8 +501,8 @@ video{
 }
 .DetailMusique img{
     justify-self: center;
-    width: 470px ;
-    height: 320px; ;
+    width: 85%;
+    height: auto; 
 }
 
 /*}*/
