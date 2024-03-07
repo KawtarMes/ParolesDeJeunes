@@ -58,6 +58,7 @@ h2,h3{
 
 /* Les interactions de la nav bar */
 #header {
+    z-index: 2;
 	position: sticky;
 	top: 0;
 	left: 0;
@@ -146,7 +147,7 @@ main {
 
 .login-form {
     position: relative;
-    z-index: -1;
+    z-index: 0;
     background: #FFFFFF;
     max-width: 360px;
     margin: 0 auto 100px;
