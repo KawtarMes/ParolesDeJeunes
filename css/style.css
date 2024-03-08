@@ -58,7 +58,7 @@ h2,h3{
 
 /* Les interactions de la nav bar */
 #header {
-    width: 100%;
+    width: 100vw;
     z-index: 2;
 	position: sticky;
 	top: 0;
