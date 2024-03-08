@@ -1,5 +1,6 @@
 /********************************Navbar tablette*******************************/
 @media only screen and (min-width: 768px) and (max-width: 1024px){
+ 
     #burger{
         display: grid;
         width: 100%;
