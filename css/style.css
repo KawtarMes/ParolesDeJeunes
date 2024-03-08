@@ -58,6 +58,7 @@ h2,h3{
 
 /* Les interactions de la nav bar */
 #header {
+    width: 100%;
     z-index: 2;
 	position: sticky;
 	top: 0;
@@ -183,6 +184,7 @@ main {
 
 /************footer*************/
 footer{
+    width: 100%;
     color: white;
     display: flex;
     background-color: var(--bleue);  
