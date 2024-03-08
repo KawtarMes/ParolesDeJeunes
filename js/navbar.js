@@ -8,4 +8,28 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+/*******************scroll up button */
+let mybutton = document.getElementById("btn-back-to-top");
 
+// à partir de 40px afficher le boutton button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 40 ||
+    document.documentElement.scrollTop > 40
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+// click pour revenir en haut de la page en changeant le css rappel la fx
+mybutton.addEventListener("click", backToTop);

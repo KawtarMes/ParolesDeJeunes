@@ -181,7 +181,22 @@ main {
     color: white;
   }
   
+/*******************************************************************************/
 
+/**scroll up button**/
+#btn-back-to-top {
+    color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 0.8em;
+    padding: 6px;
+    background: var(--bleue);
+    border-radius: 50px;
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
 /************footer*************/
 footer{
     width: 100%;
