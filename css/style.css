@@ -100,7 +100,6 @@ h2,h3{
 .imageCover{
     display: grid;
     justify-content: center;
-    padding: 70px;
 }
 /*Page accueil section actualités*/
 .carrousselActu
