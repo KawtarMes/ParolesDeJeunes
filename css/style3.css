@@ -1,6 +1,12 @@
 /***mobile first**/
 
 @media only screen and (max-width: 767px){ 
+    
+    *{
+        width: fit-content;
+        height: fit-content;
+        font-family: 'Poppins';
+    }
     #burger{
         width: 100%;
         display: grid;
