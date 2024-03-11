@@ -123,6 +123,7 @@ h2,h3{
 
 .cardActu img {
     width: 95%;
+    padding-top: 3%;
 }
 .cardActu {
     text-decoration: none;
@@ -350,6 +351,7 @@ footer{
 }
 .cardCollectif img {
     width: 95%;
+    padding-top: 3%;
 }
 
 .cardCollectif:hover {
@@ -401,6 +403,7 @@ footer{
 
 .cardPhoto img{
     width: 95%;
+    padding-top: 3%;
 }
 
 .cardPhoto:hover{
@@ -443,6 +446,7 @@ footer{
 }
 .cardVideo img{
     width: 95%;
+    padding-top: 3%;
 }
 
 .cardVideo:hover{
